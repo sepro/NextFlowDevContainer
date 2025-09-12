@@ -1,0 +1,29 @@
+# Temporary directory
+./tmp/
+
+# Nextflow work directory
+work/
+
+# Nextflow cache and metadata (logs now in ./log folder - not ignored)
+.nextflow/
+
+.claude/
+
+# Results directory (optional - comment out if you want to track results)
+results/
+
+# Output files
+output/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log

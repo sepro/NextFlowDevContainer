@@ -1,0 +1,1 @@
+/workspaces/NextFlow test/tests/modules/tests/data/test_file.txt
