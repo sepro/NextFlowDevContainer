@@ -3,6 +3,7 @@
 
 # Nextflow work directory
 work/
+tests/modules/work_test/
 
 # Nextflow cache and metadata (logs now in ./log folder - not ignored)
 .nextflow/
