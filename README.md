@@ -9,6 +9,22 @@ nextflow run main.nf                                    # Default: 5 files
 nextflow run main.nf --num_files 10 --output_dir ./tmp  # Custom parameters
 ```
 
+When running this as a devcontainer use the following lines in `.devcontainer/devcontainer.json`
+
+```json
+
+  "runArgs": [
+    "--privileged"
+  ],
+  "capAdd": [
+    "SYS_ADMIN"
+  ],
+  "securityOpt": [
+    "apparmor:unconfined"
+  ]
+
+```
+
 ## Parameters
 
 - `--num_files`: Number of files to create (default: 5)
