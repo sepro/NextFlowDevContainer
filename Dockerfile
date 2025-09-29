@@ -64,6 +64,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends wget && \
     wget https://github.com/apptainer/apptainer/releases/download/v${APPTAINER_VERSION}/apptainer_${APPTAINER_VERSION}_amd64.deb && \
     dpkg -i apptainer_${APPTAINER_VERSION}_amd64.deb || apt-get -f install -y && \
     rm apptainer_${APPTAINER_VERSION}_amd64.deb && \
+    wget https://github.com/apptainer/apptainer/releases/download/v${APPTAINER_VERSION}/apptainer-suid_${APPTAINER_VERSION}_amd64.deb && \
+    dpkg -i apptainer-suid_${APPTAINER_VERSION}_amd64.deb || apt-get -f install -y && \
+    rm apptainer-suid_${APPTAINER_VERSION}_amd64.deb && \
     rm -rf /var/lib/apt/lists/*
 
 
@@ -74,3 +77,4 @@ WORKDIR /workspace
 ENV PATH="/usr/local/bin:${PATH}"
 
 CMD [ "bash" ]
+
